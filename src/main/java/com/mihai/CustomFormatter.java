@@ -6,7 +6,7 @@ import org.xmlunit.diff.ComparisonType;
 
 public class CustomFormatter implements ComparisonFormatter{
     public String getDescription(Comparison comparison) {
-        StringBuilder result = new StringBuilder("DIfference found at: ");
+        StringBuilder result = new StringBuilder("New difference found at: ");
         result.append(comparison.getControlDetails().getParentXPath());
         result.append(" between ");
         result.append("expected value: ").append(comparison.getControlDetails().getValue().toString());
